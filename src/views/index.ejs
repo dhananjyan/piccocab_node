@@ -1,0 +1,602 @@
+<!-- Main Carausel -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="background-color: #6bb546;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="w-100 carousel-img" src="/images/B1.jpg" style="height:40vh" alt="PiccoCabs">
+        </div>
+        <div class="carousel-item">
+            <img class="w-100 carousel-img" src="/images/B2.jpg" style="height:40vh" alt="PiccoCabs">
+        </div>
+        <div class="carousel-item">
+            <img class="w-100 carousel-img" src="/images/B3.jpg" style="height:40vh" alt="PiccoCabs">
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid my-1" id="header">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-6 py-4">
+            <div class="nobootstrap-center">
+                <ul class="nav md-pills nav-justified pills-rounded">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#panel100" role="tab">Outstation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#panel101" role="tab">Rental</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Tab panels -->
+            <div class="tab-content">
+
+                <!--Panel 1-->
+                <div class="tab-pane fade in show active" id="panel100" role="tabpanel">
+                    <div class="nobootstrap-center">
+                        <form method="POST" id="contact-form">
+                            <div class="nobootstrap-radio-grid">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="entry,470164218" value="One-Way Drop" id="One-Way Drop" required checked />
+                                    <label class="form-check-label" for="One-Way Drop" style="font-weight:bolder">
+                                        One-way drop
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="entry,470164218" value="Round-trip" id="Round-trip" required checked />
+                                    <label class="form-check-label" for="Round-trip" style="font-weight:bolder">
+                                        Round-trip
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group" style="display: grid; grid-template-columns: 25% 75%">
+                                <label class="bookInputLable" for="name">Name</label>
+                                <input type="text" class="form-control bookInput" id="name" required placeholder="Enter your name" name="entry.1885420478" />
+                            </div>
+
+                            <div class="form-group" style="display: grid; grid-template-columns: 25% 75%">
+                                <label for="from" class="bookInputLable">From </label>
+                                <input class="form-control bookInput" type="text" id="from" required placeholder="Enter your pickup point" />
+                            </div>
+                            <div class="form-group" style="display: grid; grid-template-columns: 25% 75%">
+                                <label class="bookInputLable" for="to">To</label>
+                                <input class="form-control bookInput" type="text" id="to" required name="entry.608790384" placeholder="Enter your drop point" />
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-6">
+
+                                    <div class="form-group" style="display: grid; grid-template-columns: 25% 75%">
+                                        <label for="date" class="bookInputLable">Date</label>
+                                        <input class="form-control bookInput datepicker" placeholder="MM/DD/YYYY" type="text" id="date" required name="entry.1895900143" autocomplete="off" />
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12  col-xl-6">
+
+                                    <div class="form-group" style="display: grid; grid-template-columns: 25% 75%">
+                                        <label for="timeSelectOption" class="bookInputLable">Time</label>
+                                        <input class="form-control timepicker bookInput" required placeholder="HH:MM" type="text" id="time" required name="entry.1895900143" />
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-group" style="display: grid; grid-template-columns: 25% 75%">
+                                <label for="phno" class="bookInputLable">Ph.no
+                                </label>
+                                <input class="form-control bookInput" type="tel" id="phno" pattern="\d{10}" name="entry.420263589" required placeholder="Enter your phone number" />
+                            </div>
+                            <div class="nobootstrap-center">
+                                <button type="submit" class="btn btn-picco">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--/.Panel 1-->
+
+                <!--Panel 2-->
+                <div class="tab-pane fade" id="panel101" role="tabpanel">
+                    <div class="nobootstrap-center">
+                        <form method="POST" id="contact-form2" style="padding-top: 8%">
+                            <div class="form-group" style="display: grid; grid-template-columns: 25% 75%">
+                                <label class="bookInputLabel" for="secname">Name</label>
+                                <input type="text" class="form-control bookInput" id="secname" placeholder="Enter your name" />
+                            </div>
+
+                            <div class="form-group" style="display: grid; grid-template-columns: 25% 75%">
+                                <label for="secfrom" class="bookInputLabel">From
+                                </label><input class="form-control bookInput" type="text" id="secfrom" placeholder="Enter your pickup point" />
+                            </div>
+                            <div class="form-group" style="display: grid; grid-template-columns: 25% 75%">
+                                <label for="secpackage" class="bookInputLabel">Package</label>
+                                <select class="form-control bookInput" id="secpackage">
+                                    <option value="1hr  10km">1hr 10km</option>
+                                    <option value="2hr  20km">2hr 20km</option>
+                                    <option value="3hr  30km">3hr 30km</option>
+                                    <option value="4hr  40km">4hr 40km</option>
+                                    <option value="6hr  60km">6hr 60km</option>
+                                    <option value="8hr  80km">8hr 80km</option>
+                                    <option value="10hr  100km">10hr 100km</option>
+                                    <option value="12hr  120km">12hr 120km</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="display: grid; grid-template-columns: 25% 75%">
+                                <label for="secphno" class="bookInputLabel">Ph.no</label>
+                                <input class="form-control bookInput" required pattern="\d{10}" type="number" id="secphno" placeholder="Enter your phone number" />
+                            </div>
+                            <div class="nobootstrap-center">
+                                <button type="submit" class="btn btn-picco">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--/.Panel 2-->
+            </div>
+
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Booked Successfully</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Your cab is in the way to pick-up you.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 py-5">
+            <img src="/images/car-gif.gif" class="img-fluid" alt="car" id="style-gif">
+        </div>
+        <div class="col d-flex justify-content-center my-4 socio">
+            <a href="https://www.facebook.com/piccocab" class="d-block px-3" target="_blank"><i class="fab fa-facebook fa-2x"></i></a><a href="https://instagram.com/piccocabs" class="d-block px-3" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="mailto:piccocabs@gmail.com" class="d-block px-3" target="_blank"><i class="fas fa-envelope fa-2x"></i></a><a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zKo0rirMKzA1YLRSNagwTjIwSDY1NDVMSUpNSTZNsTKoME02SDO3TE6xTDQ3SzOxMPTiKshMTs5XSE5MKgYAg7ATpg&q=picco+cabs&rlz=1C1SQJL_enIN863IN863&oq=picco&aqs=chrome.1.69i60j46j69i57j0j46j69i60l3.2118j0j4&sourceid=chrome&ie=UTF-8"
+                class="d-block px-3"><i class="fab fa-google fa-2x"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- offers -->
+<div class="container my-5" id="offers">
+    <div class="row">
+        <h3>Great Offers For You</h3>
+    </div>
+    <div class="row">
+        <div class="col-md-4" class="offer">
+            <div class="px-3 pb-3 text-center">
+                <div class="row">
+                    <img src="/images/mdutokodaibig.jpg" class="img-fluid" alt="car_mini">
+                </div>
+                <div class="row p-1">
+                    <h5>
+                        Madurai to Kodaikanal
+                    </h5>
+                </div>
+                <div class="row">
+                    <p>Offer <span class="font-weight-bold">Rs.3999/- only</span></p>
+                    <p>
+                        Now enjoy Kodaikanal trip (2D/1N) with travel food accommodation sightseeing and activities. Min 2pax
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" class="offer">
+            <div class="px-3 pb-3 text-center">
+                <div class="row">
+                    <img src="/images/mdutochennaibig.jpg" class="img-fluid" alt="car_mini">
+                </div>
+                <div class="row p-1">
+                    <h5>
+                        Madurai to Chennai
+                    </h5>
+                </div>
+                <div class="row">
+                    <p>Offer <span class="font-weight-bold">Rs.6999/- only</span></p>
+                    <p>
+                        Madurai - Chennai & Chennai - Madurai Oneway Drop. Travel from your doorstep to Doorstep in fully sanitized private Sedans with unlimited kms
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" class="offer">
+            <div class="px-3 pb-3 text-center">
+                <div class="row">
+                    <img src="/images/mdutobangbig.jpg" class="img-fluid" alt="car_mini">
+                </div>
+                <div class="row p-1">
+                    <h5>
+                        Madurai to Bangalore
+                    </h5>
+                </div>
+                <div class="row">
+                    <p>Offer <span class="font-weight-bold">Rs.7999/- only</span></p>
+                    <p>
+                        Madurai - Bangalore & Bangalore - Madurai One way Drop. Travel from your doorstep to Doorstep in fully sanitized private Sedans with unlimited kms
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- fleet section-->
+<div class="container my-5" id="fleet">
+    <div class="row">
+        <h3>Picco's Fleet</h3>
+    </div>
+    <div class="row">
+        <div class="col-md-4" class="fleet_car">
+            <div class="px-3 pb-3 text-center">
+                <div class="row">
+                    <img src="/images/car_mini.png" class="img-fluid col-md-9 m-auto" alt="car_mini">
+                </div>
+                <div class="row">
+                    <h4>
+                        Picco Mini
+                    </h4>
+                </div>
+                <div class="row">
+                    <p>
+                        Peppy Hatchbacks for quick and pocket friendly rides.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" class="fleet_car">
+            <div class="px-3 pb-3 text-center">
+                <div class="row">
+                    <img src="/images/car_sedan.png" class="img-fluid col-md-9 m-auto" alt="car_sedan">
+                </div>
+                <div class="row">
+                    <h4>
+                        Picco Sedan
+                    </h4>
+                </div>
+                <div class="row">
+                    <p>
+                        Comfortable Cars for Family & Touring with adequate boot space and ample entertainment.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" class="fleet_car">
+            <div class="px-3 pb-3 text-center">
+                <div class="row">
+                    <img src="/images/car_suv.png" class="img-fluid col-md-9 m-auto" alt="car_suv">
+                </div>
+                <div class="row">
+                    <h4>
+                        Picco SUV
+                    </h4>
+                </div>
+                <div class="row">
+                    <p>
+                        Big Space , Big Trips with more people and more things.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--why choose us-->
+<section class="py-2" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="text-center mt-5" style="color: #6bb546">Why Choose Us?</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-lg-3 col-sm-6 col-xs-8">
+                <a href="#services" class="services-small-item">
+                    <div class="icon">
+                        <img src="/images/price.png" alt="price" />
+                    </div>
+                    <h5 class="services-title my-5">Best Price</h5>
+                    <p style="height: 75px;"> We reward you with lower rates the longer you rent a car from us and at best price.</p>
+                    <div class="button">
+                        <i class="fa fa-taxi"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <a href="#services" class="services-small-item">
+                    <div class="icon">
+                        <img src="/images/technology.png" alt="support" />
+                    </div>
+                    <h5 class="services-title my-5">24*7 Support</h5>
+                    <p style="height: 75px;"> An immediate free transfer service to your residence and replacement car is available.</p>
+                    <div class="button">
+                        <i class="fa fa-taxi"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <a href="#services" class="services-small-item">
+                    <div class="icon">
+                        <img src="/images/man.png" alt="friendly" />
+                    </div>
+                    <h5 class="services-title my-5">Friendly Drivers</h5>
+                    <p style="height: 75px;">Our friendly and knowledgeable drivers will take care of you with the complete journey.</p>
+                    <div class="button">
+                        <i class="fa fa-taxi"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <a href="#services" class="services-small-item">
+                    <div class="icon">
+                        <img src="/images/transportation.png" alt="premium" />
+                    </div>
+                    <h5 class="services-title my-5">Premium Cabs</h5>
+                    <p style="height: 75px;">All our cars and brand new and regularly audited cars.</p>
+                    <div class="button">
+                        <i class="fa fa-taxi"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- start count stats -->
+
+<section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col-lg-12 py-3">
+                <div class="center-heading">
+                    <h2 class="text-center" style="color: #6bb546">Our Expertise</h2>
+                    <h3 class="my-3">Our record and achievements since 2015</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col-lg-3 stats">
+                <i class="fa fa-taxi" aria-hidden="true"></i>
+                <div class="my-2 counting" data-count="846">0</div>
+                <h5 class="my-2">Rides and More</h5>
+            </div>
+
+            <div class="col-lg-3 stats">
+                <i class="fa fa-road" aria-hidden="true"></i>
+                <div class="my-2 counting" data-count="119">0</div>
+                <h5 class="my-2">Routes</h5>
+            </div>
+
+            <div class="col-lg-3 stats">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <div style="width: 100%;display: flex;align-items: center;justify-content: center;">
+                    <div class="my-2 counting plus" data-count="400">0</div><span>+</span>
+                </div>
+                <h5 class="my-2">Happy customers</h5>
+            </div>
+
+            <div class="col-lg-3 stats">
+                <i class="fa fa-shield" aria-hidden="true"></i>
+                <div class="my-2 counting" data-count="62">0</div>
+                <h5 class="my-2">Trusted Vehicles</h5>
+            </div>
+
+
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+
+</section>
+<!-- carousel popular destinations-->
+<div class="container-fluid my-1">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center-heading">
+                <h2 class="text-center" style="color: #6bb546">Popular Destinations</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row my-1 py-4 justify-content-center">
+        <div class="col-md-8 col-sm-10 mx-1">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner" style="height:450px">
+                    <div class="carousel-item active img-fluid">
+                        <img class="d-block w-100" src="/images/chennai.jpg" alt="Chennai" style="position: absolute;top: 0;left: 0;min-height: 450px;">
+                        <div class="carousel-caption d-md-block align-items-center flex-column pt-6">
+                            <h4>Chennai</h4>
+                            <h5>Madras known for it's strength and the people</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item img-fluid">
+                        <img class="d-block w-100" src="/images/coimbatore.jpg" alt="Coimbatore" style="position: absolute;top: 0;left: 0;min-height: 450px;">
+                        <div class="carousel-caption d-md-block align-items-center flex-column p-4">
+                            <h4 class="text-dark">Coimbatore</h4>
+                            <h5 class="text-dark"> Coimbatore was ranked the best emerging city in India by India Today in the 2014 annual Indian city survey</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item img-fluid">
+                        <img class="d-block w-100" src="/images/banglore.jpg" alt="Bangalore" style="position: absolute;top: 0;left: 0;min-height: 450px;">
+                        <div class="carousel-caption d-md-block align-items-center flex-column pt-6">
+                            <h4>Bangalore</h4>
+                            <h5>Bangalore is also known as silicon valley of India.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item img-fluid">
+                        <img class="d-block w-100" src="/images/tirunelveli.jpg" alt="Tirunelveli" style="position: absolute;top: 0;left: 0;min-height: 450px;">
+                        <div class="carousel-caption d-md-block align-items-center flex-column pt-6">
+                            <h4 class="text-dark">Tirunelveli</h4>
+                            <h5 class="text-dark">The land of temples, farmers, rivers.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item img-fluid">
+                        <img class="d-block w-100" src="/images/pondicherry.jpg" alt="Pondicherry" style="position: absolute;top: 0;left: 0;min-height: 450px;">
+                        <div class="carousel-caption d-md-block align-items-center flex-column pt-6">
+                            <h4 class="text-dark">Pondicherry</h4>
+                            <h5 class="text-dark">For seekers of spirituality, Pondicherry is known for Aurobindo Ashram and Auroville attracting thousands of tourists to explore this beautiful city.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item img-fluid">
+                        <img class="d-block w-100" src="/images/ramanathapuram.jpg" alt="Ramanathapuram" style="position: absolute;top: 0;left: 0;min-height: 450px;">
+                        <div class="carousel-caption d-md-block align-items-center flex-column pt-6">
+                            <h4>Ramanathapuram</h4>
+                            <h5>Ramanathapuram is known fot the beach, and their fisher-mens.</h5>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- about us-->
+<div class="container my-5 py-5" id="aboutus" style="height:600px">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center-heading">
+                <h2 class="text-center" style="color: #6bb546">About us</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-md-10">
+                    <div class="position-relative px-3 mt-5 text-center py-5" style="background-color: #6bb546;border-radius: 10px;">
+                        <h5 class="my-3 text-center" style="color: white">Picco Cabs is an emerging indian startup based on Madurai to provide Hassle free & Top class cabs services at your doorsteps in lowest prices. We are thrilled to be a part of leading travel companies in South India.</h5>
+                        <a href='#header'><button type="button" class="btn btn-light">Book A Cab</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- testimonial-->
+<div class="container my-3" id="testimonial">
+    <section>
+        <div class="text-center my-3">
+            <h2 class="font-weight-bold display-4 ">What Our <span style="color: #6bb546">Clients</span> Say?</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="bg-light position-relative px-3 mt-5 text-center py-5">
+                    <div class="my-2">
+                        <svg fill="#6bb546" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 349.078 349.078" style="enable-background:new 0 0 349.078 349.078;" xml:space="preserve">
+								<g>
+									<path d="M198.779,322.441v-58.245c0-7.903,6.406-14.304,14.304-14.304c28.183,0,43.515-28.904,45.643-85.961h-45.643
+									c-7.897,0-14.304-6.41-14.304-14.304V26.64c0-7.9,6.406-14.301,14.304-14.301h121.69c7.896,0,14.305,6.408,14.305,14.301v122.988
+									c0,27.349-2.761,52.446-8.181,74.611c-5.568,22.722-14.115,42.587-25.398,59.049c-11.604,16.917-26.132,30.192-43.155,39.437
+									c-17.152,9.304-37.09,14.026-59.267,14.026C205.186,336.745,198.779,330.338,198.779,322.441z M14.301,249.887
+									C6.404,249.887,0,256.293,0,264.185v58.257c0,7.896,6.404,14.298,14.301,14.298c22.166,0,42.114-4.723,59.255-14.026
+									c17.032-9.244,31.558-22.508,43.161-39.437c11.29-16.462,19.836-36.328,25.404-59.061c5.423-22.165,8.178-47.263,8.178-74.6V26.628
+									c0-7.9-6.41-14.301-14.304-14.301H14.301C6.404,12.327,0,18.734,0,26.628v122.988c0,7.899,6.404,14.304,14.301,14.304h45.002
+									C57.201,220.982,42.09,249.887,14.301,249.887z" />
+								</g>
+							</svg>
+                    </div>
+                    <div class="px-3 text-center pb-3">
+                        <p class="font-weight-light my-3 text-secondary">Good approach... Nice Customer interaction... Worth to call again, I am really happy to had the best cab.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white mt-4" style="background-color: #6bb546;width: 60px;height: 60px;">
+                        <img class="rounded-circle" src="/images/man.svg" alt="Man" height="55px" width="55px">
+                    </div>
+                    <div class="text-center">
+                        <small class="font-weight-bold" style="line-height: 1">Vijay</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="background-color: #6bb546" class="position-relative px-3 mt-5 text-center py-5">
+                    <div class="my-2">
+                        <svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 349.078 349.078" style="enable-background:new 0 0 349.078 349.078;" xml:space="preserve">
+								<g>
+									<path d="M198.779,322.441v-58.245c0-7.903,6.406-14.304,14.304-14.304c28.183,0,43.515-28.904,45.643-85.961h-45.643
+									c-7.897,0-14.304-6.41-14.304-14.304V26.64c0-7.9,6.406-14.301,14.304-14.301h121.69c7.896,0,14.305,6.408,14.305,14.301v122.988
+									c0,27.349-2.761,52.446-8.181,74.611c-5.568,22.722-14.115,42.587-25.398,59.049c-11.604,16.917-26.132,30.192-43.155,39.437
+									c-17.152,9.304-37.09,14.026-59.267,14.026C205.186,336.745,198.779,330.338,198.779,322.441z M14.301,249.887
+									C6.404,249.887,0,256.293,0,264.185v58.257c0,7.896,6.404,14.298,14.301,14.298c22.166,0,42.114-4.723,59.255-14.026
+									c17.032-9.244,31.558-22.508,43.161-39.437c11.29-16.462,19.836-36.328,25.404-59.061c5.423-22.165,8.178-47.263,8.178-74.6V26.628
+									c0-7.9-6.41-14.301-14.304-14.301H14.301C6.404,12.327,0,18.734,0,26.628v122.988c0,7.899,6.404,14.304,14.301,14.304h45.002
+									C57.201,220.982,42.09,249.887,14.301,249.887z" />
+								</g>
+							</svg>
+                    </div>
+                    <div class="px-3 text-center pb-3">
+                        <p class="font-weight-light my-3 text-white">The vehicle is in good condition. The driver is very professional and friendly as well as drives safely.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white mt-4" style="width: 60px;height: 60px;background-color: #6bb546">
+                        <img class="rounded-circle" src="/images/designer.svg" alt="Women" height="55px" width="55px">
+                    </div>
+                    <div class="text-center">
+                        <small class="font-weight-bold" style="line-height: 1">Anjana</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-light position-relative px-3 mt-5 text-center py-5">
+                    <div class="my-2">
+                        <svg fill="#6bb546" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 349.078 349.078" style="enable-background:new 0 0 349.078 349.078;" xml:space="preserve">
+								<g>
+									<path d="M198.779,322.441v-58.245c0-7.903,6.406-14.304,14.304-14.304c28.183,0,43.515-28.904,45.643-85.961h-45.643
+									c-7.897,0-14.304-6.41-14.304-14.304V26.64c0-7.9,6.406-14.301,14.304-14.301h121.69c7.896,0,14.305,6.408,14.305,14.301v122.988
+									c0,27.349-2.761,52.446-8.181,74.611c-5.568,22.722-14.115,42.587-25.398,59.049c-11.604,16.917-26.132,30.192-43.155,39.437
+									c-17.152,9.304-37.09,14.026-59.267,14.026C205.186,336.745,198.779,330.338,198.779,322.441z M14.301,249.887
+									C6.404,249.887,0,256.293,0,264.185v58.257c0,7.896,6.404,14.298,14.301,14.298c22.166,0,42.114-4.723,59.255-14.026
+									c17.032-9.244,31.558-22.508,43.161-39.437c11.29-16.462,19.836-36.328,25.404-59.061c5.423-22.165,8.178-47.263,8.178-74.6V26.628
+									c0-7.9-6.41-14.301-14.304-14.301H14.301C6.404,12.327,0,18.734,0,26.628v122.988c0,7.899,6.404,14.304,14.301,14.304h45.002
+									C57.201,220.982,42.09,249.887,14.301,249.887z" />
+								</g>
+							</svg>
+                    </div>
+                    <div class="px-3 text-center pb-3">
+                        <p class="font-weight-light my-3 text-secondary">Well behaved. Good driving, Friendly. This is my first ride with piccocabs and is better than expected.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white mt-4" style="width: 60px;height: 60px; background-color: #6bb546">
+                        <img class="rounded-circle" src="/images/man.svg" alt="Customer" height="55px" width="55px">
+                    </div>
+                    <div class="text-center">
+                        <small class="font-weight-bold" style="line-height: 1">Pradeep</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- end cont stats -->
+<div class="container my-4" id="contact">
+    <div class="row justify-content-center">
+        <div class="col-xs-10 col-sm-10 col-md-4 col-lg-4 p-2 m-4">
+            <img src="/images/logo.png" class="img-fluid" alt="Piccocabs">
+        </div>
+    </div>
+</div>
